@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+
+.app {
+  text-align: center;
+  margin:20px;
+  padding:20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search {
+  text-align: left;
+  width: 300px;
+}
+
+.filter {
+  width: 200px;
+}

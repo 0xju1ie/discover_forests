@@ -1,0 +1,5 @@
+fastapi[all]
+uvicorn[standard]
+pydantic
+pymongo==3.11.3
+motor==2.4.0

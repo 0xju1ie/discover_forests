@@ -1,9 +1,8 @@
 FROM node:latest
-RUN mkdir /app
 WORKDIR /app
-COPY frontend/package.json /app
+COPY ./frontend/package.json .
+COPY ./frontend/package-lock.json .
 RUN npm install
 EXPOSE 3000
-COPY . /app
+COPY ./frontend .
 CMD ["npm", "start"]
-

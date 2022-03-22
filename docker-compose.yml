@@ -43,7 +43,5 @@ services:
     build:
       context: ./
       dockerfile: frontend.dockerfile
-    volumes:
-      - './frontend:/app'
     ports:
       - 3000:3000

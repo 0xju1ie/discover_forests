@@ -3,7 +3,7 @@ from model import Forest
 #mongodb driver
 import motor.motor_asyncio
 
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://admin:admin@pachama.vsxlb.mongodb.net/test')
+client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://admin:admin@mongo:27017/')
 database = client.pachama
 collection = database.forests
 

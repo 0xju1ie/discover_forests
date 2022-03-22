@@ -1,9 +1,16 @@
 # Running this app
 
-Make sure you have docker installed and running, then you can run the application by running the following command
+Add a ".env" file to the root of your system with the environment variables.
+
+.env contents:
+
+MONGO_USER=admin
+
+MONGO_PASSWORD=admin
+
+Make sure you have docker installed and running, then you can run the application by running the following command:
 
 ### `docker-compose up`
-
 
 The application can be accessed at http://localhost:3000
 

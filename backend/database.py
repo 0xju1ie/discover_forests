@@ -1,9 +1,12 @@
 from model import Forest
-
 #mongodb driver
+import os
 import motor.motor_asyncio
 
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://admin:admin@mongo:27017/')
+username = os.getenv('MONGODB_USER', '')
+password = os.getenv('MONGODB_PASSWORD', '')
+
+client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://'+username+":"+password+'@mongo:27017/')
 database = client.pachama
 collection = database.forests
 

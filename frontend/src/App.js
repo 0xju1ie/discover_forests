@@ -1,6 +1,6 @@
 import React, { useState, useEffect,} from 'react';
 import './App.css';
-import { Select, Input, Row, Col } from 'antd';
+import { Select, Input } from 'antd';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ForestCardView from './components/ForestCardView';

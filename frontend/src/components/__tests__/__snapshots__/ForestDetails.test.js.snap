@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+Object {
+  "container": <body
+    class="ant-scrolling-effect"
+    style="overflow: hidden; overflow-x: hidden; overflow-y: hidden;"
+  >
+    <div />
+    <div>
+      <div
+        class="ant-drawer ant-drawer-right ant-drawer-open"
+        data-testid="forestDetails"
+        tabindex="-1"
+      >
+        <div
+          class="ant-drawer-mask"
+        />
+        <div
+          class="ant-drawer-content-wrapper"
+          style="width: 640px;"
+        >
+          <div
+            class="ant-drawer-content"
+          >
+            <div
+              class="ant-drawer-wrapper-body"
+            >
+              <div
+                class="ant-drawer-header"
+              >
+                <div
+                  class="ant-drawer-header-title"
+                >
+                  <button
+                    aria-label="Close"
+                    class="ant-drawer-close"
+                    type="button"
+                  >
+                    <span
+                      aria-label="close"
+                      class="anticon anticon-close"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="close"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div
+                    class="ant-drawer-title"
+                  >
+                    forest1 Details
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-drawer-body"
+              >
+                <div
+                  class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-left ant-divider-no-default-orientation-margin-left"
+                  role="separator"
+                >
+                  <span
+                    class="ant-divider-inner-text"
+                    style="margin-left: 0px;"
+                  >
+                    Location
+                  </span>
+                </div>
+                <p
+                  class="site-description-item-profile-p"
+                >
+                  Country: Belgium
+                </p>
+                <p
+                  class="site-description-item-profile-p"
+                >
+                  Latitude: 50.503887
+                </p>
+                <p
+                  class="site-description-item-profile-p"
+                >
+                  Longitude: 4.469936
+                </p>
+                <p
+                  class="site-description-item-profile-p"
+                >
+                  Area covered (hectares): 689300
+                </p>
+                <div
+                  class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-left ant-divider-no-default-orientation-margin-left"
+                  role="separator"
+                >
+                  <span
+                    class="ant-divider-inner-text"
+                    style="margin-left: 0px;"
+                  >
+                    Health Metrics
+                  </span>
+                </div>
+                <p
+                  class="site-description-item-profile-p"
+                >
+                  Current amount of carbon stored (millions metric tonnes of C02): 600000
+                </p>
+                <p
+                  class="site-description-item-profile-p"
+                >
+                  Change in carbon stored in the last 30 days (millions metric tonnes of C02): 1000.9
+                </p>
+                <div
+                  class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-left ant-divider-no-default-orientation-margin-left"
+                  role="separator"
+                >
+                  <span
+                    class="ant-divider-inner-text"
+                    style="margin-left: 0px;"
+                  >
+                    Description
+                  </span>
+                </div>
+                <p
+                  class="site-description-item-profile-p"
+                >
+                  Forest type: conservation
+                </p>
+                <p
+                  class="site-description-item-profile-p"
+                >
+                  Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+}
+`;

@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<ForestCard
+  forest={
+    Object {
+      "area_covered": 689300,
+      "brief_description": "Le Lorem Ipsum est simplement du faux texte employé.",
+      "country": "Belgium",
+      "current_carbon_stored": 600000,
+      "delta_carbon_stored": 1000.9,
+      "forest_type": "conservation",
+      "latitude": 50.503887,
+      "long_description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.",
+      "longitude": 4.469936,
+      "name": "forest1",
+    }
+  }
+>
+  <Col
+    lg={
+      Object {
+        "offset": 2,
+        "span": 6,
+      }
+    }
+    onClick={[Function]}
+    span={8}
+    xs={
+      Object {
+        "offset": 1,
+        "span": 5,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-8 ant-col-xs-5 ant-col-xs-offset-1 ant-col-lg-6 ant-col-lg-offset-2"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <Ribbon
+        placement="start"
+        text="conservation"
+      >
+        <div
+          className="ant-ribbon-wrapper"
+        >
+          <ForwardRef
+            bordered={true}
+            cover={
+              <img
+                alt="forest"
+              />
+            }
+            hoverable={true}
+            style={
+              Object {
+                "width": 300,
+              }
+            }
+          >
+            <div
+              className="ant-card ant-card-bordered ant-card-hoverable"
+              style={
+                Object {
+                  "width": 300,
+                }
+              }
+            >
+              <div
+                className="ant-card-cover"
+              >
+                <img
+                  alt="forest"
+                />
+              </div>
+              <div
+                className="ant-card-body"
+                style={Object {}}
+              >
+                <Meta
+                  description="Le Lorem Ipsum est simplement du faux texte employé."
+                  title="forest1"
+                >
+                  <div
+                    className="ant-card-meta"
+                  >
+                    <div
+                      className="ant-card-meta-detail"
+                    >
+                      <div
+                        className="ant-card-meta-title"
+                      >
+                        forest1
+                      </div>
+                      <div
+                        className="ant-card-meta-description"
+                      >
+                        Le Lorem Ipsum est simplement du faux texte employé.
+                      </div>
+                    </div>
+                  </div>
+                </Meta>
+              </div>
+            </div>
+          </ForwardRef>
+          <div
+            className="ant-ribbon ant-ribbon-placement-start"
+            style={Object {}}
+          >
+            <span
+              className="ant-ribbon-text"
+            >
+              conservation
+            </span>
+            <div
+              className="ant-ribbon-corner"
+              style={Object {}}
+            />
+          </div>
+        </div>
+      </Ribbon>
+    </div>
+  </Col>
+  <ForestDetails
+    forest={
+      Object {
+        "area_covered": 689300,
+        "brief_description": "Le Lorem Ipsum est simplement du faux texte employé.",
+        "country": "Belgium",
+        "current_carbon_stored": 600000,
+        "delta_carbon_stored": 1000.9,
+        "forest_type": "conservation",
+        "latitude": 50.503887,
+        "long_description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.",
+        "longitude": 4.469936,
+        "name": "forest1",
+      }
+    }
+    handleExitDetails={[Function]}
+    isDetailsVisible={false}
+  >
+    <DrawerWrapper
+      data-testid="forestDetails"
+      onClose={[Function]}
+      placement="right"
+      title="forest1 Details"
+      visible={false}
+      width={640}
+    >
+      <Drawer
+        data-testid="forestDetails"
+        onClose={[Function]}
+        placement="right"
+        prefixCls="ant-drawer"
+        title="forest1 Details"
+        visible={false}
+        width={640}
+      >
+        <DrawerWrapper
+          afterVisibleChange={[Function]}
+          autoFocus={true}
+          className=""
+          data-testid="forestDetails"
+          defaultOpen={false}
+          duration=".3s"
+          ease="cubic-bezier(0.78, 0.14, 0.15, 0.86)"
+          forceRender={false}
+          getContainer="body"
+          handler={false}
+          keyboard={true}
+          level={null}
+          maskClosable={true}
+          maskStyle={Object {}}
+          onChange={[Function]}
+          onClose={[Function]}
+          open={false}
+          placement="right"
+          prefixCls="ant-drawer"
+          showMask={true}
+          style={
+            Object {
+              "transform": undefined,
+              "zIndex": undefined,
+            }
+          }
+          width={640}
+          wrapperClassName=""
+        >
+          <PortalWrapper
+            forceRender={false}
+            getContainer="body"
+            visible={false}
+            wrapperClassName=""
+          />
+        </DrawerWrapper>
+      </Drawer>
+    </DrawerWrapper>
+  </ForestDetails>
+</ForestCard>
+`;

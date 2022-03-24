@@ -1,9 +1,9 @@
-import { render, screen, cleanup } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import ForestDetails from "../ForestDetails";
+import { render, screen, cleanup, waitFor } from "@testing-library/react";
 import ForestCard from "../ForestCard";
-
-afterEach(cleanup);
+import Enzyme, { mount, shallow } from "enzyme";
+import EnzymeToJson from "enzyme-to-json";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+Enzyme.configure({ adapter: new Adapter() });
 
 const forestList = {
   name: "forest1",
@@ -19,27 +19,25 @@ const forestList = {
   brief_description: "Le Lorem Ipsum est simplement du faux texte employé.",
 };
 
-test("renders without crashing", () => {
-  const div = document.createElement("div");
-  render(<ForestDetails isDetailsVisible="true" forest={forestList} />, div);
-  // screen.debug()
-});
-
-test("renders correctly when a ForestCard is clicked", () => {
-  render(<ForestCard forest={forestList} />);
-  const forestCardDescription = screen.getByText(
+function renderForestCard(props) {
+  const utils = render(<ForestCard forest={props} />);
+  const forestCardRibbon = utils.getByText(/^conservation/i);
+  const forestCardDescription = utils.getByText(
     /^Le Lorem Ipsum est simplement du faux texte employé./i
   );
-  userEvent.click(forestCardDescription);
-  const forestDetails = screen.getByTestId("forestDetails");
-  const forestLatitude = screen.getByText(/50.503887/i);
-  expect(forestDetails).toBeInTheDocument();
-  expect(forestLatitude).toBeInTheDocument();
+  return { ...utils, forestCardRibbon, forestCardDescription };
+}
+
+test("the Forest Card renders correctly", () => {
+  const { forestCardRibbon, forestCardDescription } =
+    renderForestCard(forestList);
+  expect(forestCardRibbon).toHaveTextContent("conservation");
+  expect(forestCardDescription).toHaveTextContent(
+    "Le Lorem Ipsum est simplement du faux texte employé."
+  );
 });
 
 test("matches snapshot", () => {
-  const { container } = render(
-    <ForestDetails isDetailsVisible="true" forest={forestList} />
-  );
-  expect({ container: document.body }).toMatchSnapshot();
+  const tree = mount(<ForestCard forest={forestList} />);
+  expect(EnzymeToJson(tree)).toMatchSnapshot();
 });
